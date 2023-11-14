@@ -7,36 +7,38 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
   <link rel="stylesheet" href="style.css">
   <script src="https://kit.fontawesome.com/30c6ed17e7.js" crossorigin="anonymous"></script>
-  <title>Your Website</title>
-  <style>
-
-  </style>
+  <title>BIOSTEEL</title>
+ 
 </head>
 
 <body>
 
   <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <a class="navbar-brand pd-4" href="#"><img height="30px" width="200px" src="https://biosteel.com/cdn/shop/files/BioSteel-Logo-Horizontal_510x.png?v=1613279355" alt="biosteel" srcset=""></a>
+    <a class="navbar-brand pd-4" href="index.html"><img height="30px" width="200px" src="https://biosteel.com/cdn/shop/files/BioSteel-Logo-Horizontal_510x.png?v=1613279355" alt="biosteel" srcset=""></a>
     <ul class="navbar-nav ml-auto">
-      <li class="nav-item">
-        <a class="nav-link" href="#">Shop All</a>
+      <li class="nav-item" id="shopAllNavItem">
+        <a class="nav-link" onclick="toggleProductCategory()">Shop All</a>
         <div class="product-category">
           <div class="row">
             <div class="col-md-3">
-              <a href="http://"><img src="https://biosteel.com/cdn/shop/collections/collection-hydration-image1-US_1_1048x.png?v=1645734012" alt="Category 1">
-              <p>SPORTS HYDRATION MIX</p></a>
+              <a href="category1.html"><img src="https://biosteel.com/cdn/shop/collections/collection-hydration-image1-US_1_1048x.png?v=1645734012" alt="Category 1">
+                <p>SPORTS HYDRATION MIX</p>
+              </a>
             </div>
             <div class="col-md-3">
-              <a href="http://"><img src="https://biosteel.com/cdn/shop/collections/collection-proteins-image_faf0160a-b9b7-4128-a8d0-d79b40612599_1048x.png?v=1620157734" alt="Category 2">
-              <p>PROTEINS</p></a>
+              <a href="category2.html"><img src="https://biosteel.com/cdn/shop/collections/collection-proteins-image_faf0160a-b9b7-4128-a8d0-d79b40612599_1048x.png?v=1620157734" alt="Category 2">
+                <p>PROTEINS</p>
+              </a>
             </div>
             <div class="col-md-3">
-              <a href="http://"><img src="https://biosteel.com/cdn/shop/collections/collection-SportGreens-image_1048x_2_1048x.png?v=1643918548" alt="Category 3">
-              <p>SPECIALTY NUTRITION</p></a>
+              <a href="category3.html"><img src="https://biosteel.com/cdn/shop/collections/collection-SportGreens-image_1048x_2_1048x.png?v=1643918548" alt="Category 3">
+                <p>SPECIALTY NUTRITION</p>
+              </a>
             </div>
             <div class="col-md-3">
-              <a href="http://"><img src="https://biosteel.com/cdn/shop/collections/collection-teamBottle-image_1048x.png?v=1668112709" alt="Category 4">
-              <p>MERCHANDISE & APPAREL</p></a>
+              <a href="category4.html"><img src="https://biosteel.com/cdn/shop/collections/collection-teamBottle-image_1048x.png?v=1668112709" alt="Category 4">
+                <p>MERCHANDISE & APPAREL</p>
+              </a>
             </div>
           </div>
         </div>
@@ -159,7 +161,12 @@
       <p>© 2023, BIOSTEEL US. ALL RIGHTS RESERVED</p></center>
   </div>
   <!-- Your content goes here -->
-
+  <script>
+    function toggleProductCategory() {
+      var shopAllNavItem = document.getElementById("shopAllNavItem");
+      shopAllNavItem.classList.toggle("active");
+    }
+  </script>
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>

@@ -5,7 +5,45 @@
 }
 .navbar {
     position: relative;
+    box-shadow: 1px 1px 1px 0px black;
   }
+
+  .product {
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  .product h6{
+    padding-top: 0px;
+    padding-bottom: 15px;
+  }
+  .product img{
+    transition: top 0.3s ease-in-out, opacity 0.3s ease-in-out;
+  }
+  .product img:hover{
+    transform: scale(0.9);
+  }
+  .btn-block{
+    text-decoration: none;
+    color: #fff;
+    background-color: black;
+    padding: 10px 30px;
+    border-radius: 5px;
+    border: 2px solid gold;
+  }
+  
+  .btn-block:hover{
+    color:gold;
+  }
+  .category1-top{
+    padding-top:100px;
+    margin-bottom:50px;
+    background-color:rgb(141, 153, 153);
+    padding:100px 100px 50px 100px;
+  }
+  .product img{
+    transition: top 0.3s ease-in-out, opacity 0.3s ease-in-out;
+  }
+
 
   .product-category {
     display: none;
@@ -14,19 +52,19 @@
     text-decoration: none;
     top: 100%;
     left: 0;
-    background-color: #fff;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #a1a1a1;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.9);
     padding: 20px;
     width: 100%;
-    transition: top 0.3s ease-in-out, opacity 0.3s ease-in-out; /* Add smooth transitions */
-    opacity: 0; /* Start with zero opacity */
+    transition: opacity 0.9s;
+   
+    /* Start with zero opacity */
   }
-
   .product-category img {
     width: 150px;
     height: 200px;
   }
-  .product-category a{
+  .product-category a {
     text-decoration: none;
     color: red;
   }
@@ -34,26 +72,38 @@
     transform: scale(0.9); /* Adjust the scale value for the desired zoom out effect */
   }
 
-  .nav-item:hover .product-category {
+  /* Show the product category when clicking on the nav item */
+  .nav-item.active .product-category {
     display: block;
-    opacity: 1; /* Set opacity to fully visible on hover */
+    opacity: 1;
+    z-index: 999;
   }
 
   /* Add a slight delay before hiding */
-  .nav-item:not(:hover) .product-category {
-    transition-delay: 0.9s; /* Adjust the delay time as needed */
-    opacity: 0; /* Set opacity to zero when not hovering */
+  .nav-item:not(.active) .product-category {
+    opacity: 0;
   }
-.navbar{
+  #shopAllNavItem a{
+    font-family: serif;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  #shopAllNavItem a:hover{
+    color: red;
+  }
+
+  .navbar {
     position: fixed;
     width: 100%;
     padding-left: 50px;
-    padding-right: 50PX;
-}
-.navbar-brand{
+    padding-right: 50px;
+  }
+
+  .navbar-brand {
     margin-left: 200px;
     margin-right: 50px;
-}
+  }
 .banner{
     background-image: url('https://biosteel.com/cdn/shop/files/MicrosoftTeams-image_36_affc12ab-0a4d-4359-a03c-d907e912c8dc_2048x.jpg?v=1691547711');
     width: 100%;
@@ -221,7 +271,23 @@
       margin: 0;
       float: left;
     }
-    
+    .category1-top{
+      padding-top:100px;
+      margin-bottom:50px;
+      background-color:rgb(141, 153, 153);
+      padding:100px 10px 50px 10px;
+    }
+    .product img{
+      width: 350px;
+      height: 350px;
+    }
+    .product-category img {
+      width:100px;
+      height: 100px;
+    }
+    .product-category a{
+      font-size: 12px;
+    }
   }
 
   @media (max-width: 576px) {
@@ -232,8 +298,25 @@
     .product-category {
       width: 100%;
     }
+    .product-category img {
+      width: 70px;
+      height: 70px;
+    }
+    .product-category a{
+      font-size: 12px;
+    }
     .footer{
       padding:40px 50px;
       background-color: black;
+    }
+    .category1-top{
+      padding-top:100px;
+      margin-bottom:50px;
+      background-color:rgb(141, 153, 153);
+      padding:100px 10px 50px 10px;
+    }
+    .product img{
+      width: 250px;
+      height: 250px;
     }
   }
