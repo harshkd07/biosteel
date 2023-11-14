@@ -3,6 +3,9 @@
     margin:o;
     box-sizing: border-box;
 }
+.row{
+  --bs-gutter-x: 0rem !important;
+}
 .navbar {
     position: relative;
     box-shadow: 1px 1px 1px 0px black;
@@ -138,12 +141,11 @@
 }
 .afterbanner-row2 ul li{
     list-style: none;
-    padding: 0px 40px;
+    padding: 0px 20px 0px 0px;
     width: 200px;
 }
 .afterbanner-row2 ul li p{
    text-align: center;
-   font-weight: 600;
    margin-top: 10px;
 }
 
@@ -155,19 +157,19 @@
     margin: 10px;
 }
 .sportsdrink-row2 ul{
-    display: flex;
-    justify-content:center;
+  display: flex;
+  justify-content:center;
 }
 .sportsdrink-row2 ul li{
-    list-style: none;
-    padding: 0px 30px;
-    width: 200px;
-    text-align: center;
+  list-style: none;
+  padding: 0px 20px 0px 0px;
+  width: 200px;
 }
-.sportsdrink-row2 h5{
-    margin-top: 10px;
-    margin-bottom: 20px;
+.sportsdrink-row2 ul li p{
+  
+  margin-top: 10px;
 }
+
 .sportsdrink-btn{
     text-align: center;
     margin-bottom: 20px;
@@ -203,7 +205,7 @@
   color:#fff;
 }
 .footer{
-  padding:40px 200px;
+  padding:40px 100px;
   background-color: black;
 }
 .footer ul li{
@@ -219,18 +221,11 @@
   font-family: serif;
   font-weight: 900;
   color: #fff;
-  line-height: 2;
+  line-height: 1.5;
 }
-.social-media {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  float: right;
-}
-
 .social-media li {
   display: inline-block;
-  margin-right: 10px; /* Adjust the margin as needed */
+  padding: 10px;
 }
 
 .social-media a {
@@ -306,7 +301,7 @@
       font-size: 12px;
     }
     .footer{
-      padding:40px 50px;
+      padding:30px 20px;
       background-color: black;
     }
     .category1-top{
@@ -319,4 +314,7 @@
       width: 250px;
       height: 250px;
     }
+    .sportsdrink{
+      margin-top: 20px;
+  }
   }
