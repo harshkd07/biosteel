@@ -289,6 +289,10 @@
     .navbar-nav {
       flex-direction: column; /* Stack navigation items in a column on small screens */
     }
+       .navbar{
+    padding-left: 10px;
+    padding-right: 20px;
+    }
 
     .product-category {
       width: 100%;
